@@ -20,7 +20,6 @@ Environment=PYTHONOPTIMIZE=2
 ExecStartPre=/opt/mlat-python-venv/bin/python3 --version
 ExecStart=/opt/mlat-python-venv/bin/python3 /opt/mlat-server/mlat-server \
     --client-listen 31090 \
-    --filtered-basestation-listen 31003 \
     --basestation-listen 31004 \
     --write-csv /run/mlat-server/positions.csv \
     --work-dir /run/mlat-server
